@@ -3,7 +3,8 @@ A website for some project
 
 Some general info on the code:
 `index.html` is the homepage. Contains About us. Mission?. Articles. Profiles
-`article-view.html` 
+`articles/any.html` contains articles by pennames
+`profiles/any.html` contains penname profiles and the articles made by this penname
 
 # License
 There are resources used in this project that have their own licenses, Mainly in `/resources`.
