@@ -2,8 +2,11 @@
 A website for some project
 
 Some general info on the code:
+
 `index.html` is the homepage. Contains About us. Mission?. Articles. Profiles
+
 `articles/any.html` contains articles by pennames
+
 `profiles/any.html` contains penname profiles and the articles made by this penname
 
 # License
