@@ -1,0 +1,50 @@
+#articles-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#articles-view-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+#popular-articles-title {
+  color: white;
+  font-family: var(--font-bold);
+  font-size: xx-large;
+  align-self: center;
+  border-top: 0;
+  border-bottom: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, transparent, white, white, transparent) 1;
+}
+
+.article-card {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  height: 55%;
+  width: 25%;
+  background-color: var(--web-black);
+    border-radius: 8px;
+}
+
+.article-card .article-bg-image {
+  background-color: var(--red-secondary);
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.article-title {
+  font-family: var(--font-regular);
+  color: white;
+  padding: 8px;
+}
+.article-description {
+  font-family: var(--font-regular);
+  color: white;
+}

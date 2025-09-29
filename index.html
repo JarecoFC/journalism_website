@@ -5,56 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vox Veritas</title>
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/content-bar.css" />
+    <link rel="stylesheet" href="styles/about-us.css" />
     <link rel="stylesheet" href="styles/debug.css" />
     <link rel="stylesheet" href="styles/home-bar.css" />
     <link rel="stylesheet" href="styles/root-container.css" />
     <link rel="stylesheet" href="styles/gradient-bg.css" />
-    <link rel="stylesheet" href="styles/navigation-bar.css">
+    <link rel="stylesheet" href="styles/tite-container.css" />
+    <link rel="stylesheet" href="styles/article-container.css" />
   </head>
   <body>
+    <!--Gradient Background-->
     <div id="gradient-bg" class="no-margin no-padding wireframe">
-      <div id="root-container" class="wireframe">
-        <div id="home-bar" class="wireframe">
-          <div id="navigation-bar" class="inherit-width flex-row wireframe">
-            <button
-              class="transparent-button max-height no-margin no-padding wireframe"
-            >
-              Home
-            </button>
-            <button
-              class="transparent-button max-height no-margin no-padding wireframe"
-            >
-              About
-            </button>
-            <button
-              class="transparent-button max-height no-margin no-padding wireframe"
-            >
-              Articles
-            </button>
-          </div>
-          <div class="inherit-width wireframe"></div>
-        </div>
-        <div id="content-bar" class="wireframe">
-          <div id="about-us">
-            <h1 id>About Lorem</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              rhoncus placerat laoreet. Praesent eget nunc mattis, placerat
-              dolor ut, vehicula est. Nunc commodo, purus sit amet vehicula
-              tempor, enim ex laoreet velit,
+      <video class="video-background" autoplay muted loop playsinline>
+        <source src="resources/bg_black.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!--Navigation Bar-->
+    <div id="home-bar" class="blur-backround wireframe no-margin no-padding">
+      <div id="tite-container" class="inherit-width wireframe">
+        <h1 id="tite-text">
+          <span class="red">VOX</span>
+          <span class="white">VERITAS</span>
+        </h1>
+      </div>
+
+      <div id="navigation-bar" class="inherit-width flex-row wireframe">
+        <ul class="dropdown wireframe">
+          <a id="dropdown-title" class="transparent-button" href="#">More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Articles</a></li>
+            <li><a href="#section4">Profiles</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <!--Everything Else-->
+    <div id="root-container" class="wireframe">
+      <div id="content-bar" class="wireframe">
+        <!--About Us-->
+        <div id="about-us-container" class="wireframe">
+          <div id="about-us" class="wireframe">
+            <h1 id="about-title-text" class="wireframe">
+              About <span class="red">VOX </span
+              ><span class="white">VERITAS:</span>
+            </h1>
+            <p id="about-description-text" class="wireframe">
+              Welcome to Vox Veritas where we uncovered the truth, raising
+              awareness, and inspiring change. The Philippines stands at a road
+              where justice and corruption constantly collide each breath we
+              take. For decades, stories of power, abuses, and lack of
+              accountability have shaped our society. Yet, alongside these
+              challenges are voices demanding transparency, fairness, and most
+              importantly reform.
             </p>
           </div>
-          <div id="mission">
-            <h1>Our Lorem Mission</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              rhoncus placerat laoreet. Praesent eget nunc mattis, placerat
-              dolor ut, vehicula est. Nunc commodo, purus sit amet vehicula
-              tempor, enim ex laoreet velit,
-            </p>
+        </div>
+
+        <div id="articles-container" class="wireframe">
+          <h1 id="popular-articles-title" class="wireframe">
+            Popular Articles
+          </h1>
+          <div id="articles-view-container">
+            <div class="article-card wireframe">
+              <img class="wireframe article-bg-image" alt="" srcset="" />
+              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
+              <p class="wireframe article-description">
+                Faust Nahuli sa Kanto View more...
+              </p>
+            </div>
+
+            <div class="article-card wireframe">
+              <img class="wireframe article-bg-image" alt="" srcset="" />
+              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
+              <p class="wireframe article-description">
+                Faust Nahuli sa Kanto View more...
+              </p>
+            </div>
+            <div class="article-card wireframe">
+              <img class="wireframe article-bg-image" alt="" srcset="" />
+              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
+              <p class="wireframe article-description">
+                Faust Nahuli sa Kanto View more...
+              </p>
+            </div>
+            <div class="article-card wireframe">
+              <img class="wireframe article-bg-image" alt="" srcset="" />
+              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
+              <p class="wireframe article-description">
+                Faust Nahuli sa Kanto View more...
+              </p>
+            </div>
+            <div class="article-card wireframe">
+              <img class="wireframe article-bg-image" alt="" srcset="" />
+              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
+              <p class="wireframe article-description">
+                Faust Nahuli sa Kanto View more...
+              </p>
+            </div>
           </div>
         </div>
+
+        <!--<div id="profiles-view"></div>-->
+        <!--<div id="footer"></div>-->
       </div>
     </div>
   </body>

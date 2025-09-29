@@ -1,6 +1,10 @@
 # Journalism Website Project
 A website for some project
 
+Some general info on the code:
+`index.html` is the homepage. Contains About us. Mission?. Articles. Profiles
+`article-view.html` 
+
 # License
 There are resources used in this project that have their own licenses, Mainly in `/resources`.
 

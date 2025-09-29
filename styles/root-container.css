@@ -2,4 +2,11 @@
     display: grid;
     grid-template-rows: 1fr 11fr;
     height: 100%;
+    overflow: scroll;
+}
+
+#content-bar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
 }
