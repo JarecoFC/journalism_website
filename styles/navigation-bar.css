@@ -1,0 +1,10 @@
+#navigation-bar .transparent-button{
+    font-family: "Roboto-Bolder";
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background-color: transparent;
+    border:none;
+    min-width: 128px;
+    max-width: 200px;
+}
