@@ -1,5 +1,9 @@
 .wireframe {
   border-style: none;
-  border-color: #FFFFFF55;
+  border-color: #ffffff55;
   border-width: 1px;
+}
+
+.debug-disabled {
+  visibility: hidden;
 }

@@ -4,6 +4,8 @@
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
+  height: 100vh;
+  width: auto;
 }
 
 #content-bar #about-us-container #about-title-text {

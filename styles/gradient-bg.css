@@ -33,6 +33,7 @@
   width: 100%;
   z-index: -9998;
   mix-blend-mode: color-dodge;
+  opacity: 25%;
 }
 
 .post-process{

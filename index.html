@@ -12,13 +12,31 @@
     <link rel="stylesheet" href="styles/gradient-bg.css" />
     <link rel="stylesheet" href="styles/tite-container.css" />
     <link rel="stylesheet" href="styles/article-container.css" />
+    <link rel="stylesheet" href="styles/protesters-bg.css" />
+    <link rel="stylesheet" href="styles/profiles-view.css" />
+
+    <script src="script/video-background.js" defer></script>
   </head>
   <body>
     <!--Gradient Background-->
     <div id="gradient-bg" class="no-margin no-padding wireframe">
-      <video class="video-background" autoplay muted loop playsinline>
-        <source src="resources/bg_black.mp4" type="video/mp4" />
+      <video
+        id="video-bg-player"
+        class="video-background"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source src="resources/bg_fire.mp4" type="video/mp4" />
       </video>
+
+      <div class="protesters-bg-container wireframe">
+        <div class="bg bg-4"></div>
+        <div class="bg bg-3"></div>
+        <div class="bg bg-2"></div>
+        <div class="bg bg-1"></div>
+      </div>
     </div>
 
     <!--Navigation Bar-->
@@ -44,7 +62,7 @@
     </div>
 
     <!--Everything Else-->
-    <div id="root-container" class="wireframe">
+    <div id="root-container" class="foreground wireframe">
       <div id="content-bar" class="wireframe">
         <!--About Us-->
         <div id="about-us-container" class="wireframe">
@@ -70,46 +88,33 @@
             Popular Articles
           </h1>
           <div id="articles-view-container">
+
             <div class="article-card wireframe">
-              <img class="wireframe article-bg-image" alt="" srcset="" />
+              <img class="wireframe article-bg-image" src="resources/backgrounds/IMG_3751.jpg" />
               <h2 class="wireframe article-title">Faust Nahuli.....</h2>
               <p class="wireframe article-description">
                 Faust Nahuli sa Kanto View more...
               </p>
             </div>
 
-            <div class="article-card wireframe">
-              <img class="wireframe article-bg-image" alt="" srcset="" />
-              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
-              <p class="wireframe article-description">
-                Faust Nahuli sa Kanto View more...
-              </p>
-            </div>
-            <div class="article-card wireframe">
-              <img class="wireframe article-bg-image" alt="" srcset="" />
-              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
-              <p class="wireframe article-description">
-                Faust Nahuli sa Kanto View more...
-              </p>
-            </div>
-            <div class="article-card wireframe">
-              <img class="wireframe article-bg-image" alt="" srcset="" />
-              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
-              <p class="wireframe article-description">
-                Faust Nahuli sa Kanto View more...
-              </p>
-            </div>
-            <div class="article-card wireframe">
-              <img class="wireframe article-bg-image" alt="" srcset="" />
-              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
-              <p class="wireframe article-description">
-                Faust Nahuli sa Kanto View more...
-              </p>
-            </div>
           </div>
         </div>
 
-        <!--<div id="profiles-view"></div>-->
+        <div id="profiles-container-view" class="wireframe">
+          <h1 id="profiles-container-title" class="wireframe">Our Authors</h1>
+          <div id="profile-container" class="wireframe">
+
+            <div class="profile-card wireframe">
+              <img
+                class="wireframe profile-bg-image"
+                src="/resources/profiles/1758454714943.png"
+              />
+              <h2 class="wireframe profile-title">Pen Faust</h2>
+            </div>
+            
+
+          </div>
+        </div>
         <!--<div id="footer"></div>-->
       </div>
     </div>

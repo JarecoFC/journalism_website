@@ -1,0 +1,1 @@
+document.getElementById("video-bg-player").playbackRate = 0.5;
