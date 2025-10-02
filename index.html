@@ -4,119 +4,186 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vox Veritas</title>
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/about-us.css" />
-    <link rel="stylesheet" href="styles/debug.css" />
-    <link rel="stylesheet" href="styles/home-bar.css" />
-    <link rel="stylesheet" href="styles/root-container.css" />
-    <link rel="stylesheet" href="styles/gradient-bg.css" />
-    <link rel="stylesheet" href="styles/tite-container.css" />
-    <link rel="stylesheet" href="styles/article-container.css" />
-    <link rel="stylesheet" href="styles/protesters-bg.css" />
-    <link rel="stylesheet" href="styles/profiles-view.css" />
 
+    <link rel="stylesheet" href="styles/debug.css" />
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/background-container.css" />
+    <link rel="stylesheet" href="styles/main-content-container.css" />
+    <link rel="stylesheet" href="styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="styles/articles.css" />
+
+    <link rel="stylesheet" href="styles/polaroid-random.css" defer />
+    <link rel="stylesheet" href="styles/load-effect.css" defer />
+
+    <script src="script/polaroid-swapper.js" defer></script>
     <script src="script/video-background.js" defer></script>
+    <script src="script/site-redirector.js" defer></script>
   </head>
   <body>
-    <!--Gradient Background-->
-    <div id="gradient-bg" class="no-margin no-padding wireframe">
-      <video
-        id="video-bg-player"
-        class="video-background"
-        autoplay
-        muted
-        loop
-        playsinline
-      >
+    <!-- BACKGROUND CONTAINER -->
+    <div id="background-container" class="wireframe load-effect">
+      <!-- GRADIENT CONTAINER -->
+      <div id="gradient-background"></div>
+
+      <!-- FIRE BACKGROUND CONTAINER -->
+      <video id="video-background-player" autoplay muted loop playsinline>
         <source src="resources/bg_fire.mp4" type="video/mp4" />
       </video>
 
-      <div class="protesters-bg-container wireframe">
-        <div class="bg bg-4"></div>
-        <div class="bg bg-3"></div>
-        <div class="bg bg-2"></div>
-        <div class="bg bg-1"></div>
-      </div>
+      <!-- PROTESTERS BACKGROUND CONTAINER -->
+      <img
+        id="protesters-variant-4"
+        class="protesters-background"
+        src="resources/protesters-background/bg-4-opt.png"
+        alt=""
+      />
+      <img
+        id="protesters-variant-3"
+        class="protesters-background"
+        src="resources/protesters-background/bg-3-opt.png"
+        alt=""
+      />
+      <img
+        id="protesters-variant-2"
+        class="protesters-background"
+        src="resources/protesters-background/bg-2-opt.png"
+        alt=""
+      />
+      <img
+        id="protesters-variant-1"
+        class="protesters-background"
+        src="resources/protesters-background/bg-1-opt.png"
+        alt=""
+      />
     </div>
 
-    <!--Navigation Bar-->
-    <div id="home-bar" class="blur-backround wireframe no-margin no-padding">
-      <div id="tite-container" class="inherit-width wireframe">
-        <h1 id="tite-text">
-          <span class="red">VOX</span>
-          <span class="white">VERITAS</span>
-        </h1>
-      </div>
-
-      <div id="navigation-bar" class="inherit-width flex-row wireframe">
-        <ul class="dropdown wireframe">
-          <a id="dropdown-title" class="transparent-button" href="#">More ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">About</a></li>
-            <li><a href="#section3">Articles</a></li>
-            <li><a href="#section4">Profiles</a></li>
-          </ul>
-        </ul>
-      </div>
-    </div>
-
-    <!--Everything Else-->
-    <div id="root-container" class="foreground wireframe">
-      <div id="content-bar" class="wireframe">
-        <!--About Us-->
+    <div id="main-content-container" class="wireframe load-effect">
+      <!-- INTRODUCTION CONTAINER -->
+      <div id="introduction-container" class="wireframe">
+        <!-- ABOUT US CONTAINER -->
         <div id="about-us-container" class="wireframe">
-          <div id="about-us" class="wireframe">
-            <h1 id="about-title-text" class="wireframe">
-              About <span class="red">VOX </span
-              ><span class="white">VERITAS:</span>
-            </h1>
-            <p id="about-description-text" class="wireframe">
-              Welcome to Vox Veritas where we uncovered the truth, raising
-              awareness, and inspiring change. The Philippines stands at a road
-              where justice and corruption constantly collide each breath we
-              take. For decades, stories of power, abuses, and lack of
-              accountability have shaped our society. Yet, alongside these
-              challenges are voices demanding transparency, fairness, and most
-              importantly reform.
-            </p>
-          </div>
-        </div>
-
-        <div id="articles-container" class="wireframe">
-          <h1 id="popular-articles-title" class="wireframe">
-            Popular Articles
+          <h1 class="text-xx-large text-bolded text-white load-effect">
+            About
+            <span class="text-xx-large text-bolded text-red">VOX</span>
+            <span class="text-xx-large text-bolded text-white">VERITAS</span>
           </h1>
-          <div id="articles-view-container">
-
-            <div class="article-card wireframe">
-              <img class="wireframe article-bg-image" src="resources/backgrounds/IMG_3751.jpg" />
-              <h2 class="wireframe article-title">Faust Nahuli.....</h2>
-              <p class="wireframe article-description">
-                Faust Nahuli sa Kanto View more...
-              </p>
-            </div>
-
-          </div>
+          <p class="text-x-large text-white load-effect">
+            Welcome to Vox Veritas where we uncovered the truth, raising
+            awareness, and inspiring change. The Philippines stands at a road
+            where justice and corruption constantly collide each breath we take.
+            For decades, stories of power, abuses, and lack of accountability
+            have shaped our society. Yet, alongside these challenges are voices
+            demanding transparency, fairness, and most importantly reform.
+          </p>
         </div>
 
-        <div id="profiles-container-view" class="wireframe">
-          <h1 id="profiles-container-title" class="wireframe">Our Authors</h1>
-          <div id="profile-container" class="wireframe">
-
-            <div class="profile-card wireframe">
-              <img
-                class="wireframe profile-bg-image"
-                src="/resources/profiles/1758454714943.png"
-              />
-              <h2 class="wireframe profile-title">Pen Faust</h2>
-            </div>
-            
-
+        <!-- THIS THING IS NEXT TO THE ABOUT US CONTAINER -->
+        <div id="random-polaroids-container">
+          <div id="rplextracontainer">
+            <img
+              id="homescreen-polaroids-v1"
+              class="random-polaroid-photos"
+              src="none"
+              alt=""
+              srcset=""
+            />
+            <img
+              id="homescreen-polaroids-v2"
+              class="random-polaroid-photos"
+              src="none"
+              alt=""
+              srcset=""
+            />
+            <img
+              id="homescreen-polaroids-v3"
+              class="random-polaroid-photos"
+              src="none"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
-        <!--<div id="footer"></div>-->
       </div>
+
+      <!-- ARTICLES CONTAINER -->
+      <div id="articles-stack-container" class="wireframe">
+        <h1
+          id="articles-title"
+          class="text-white text-xx-large title-effect text-bolded wireframe"
+        >
+          Our Popular Articles
+        </h1>
+
+        <!-- THE ACTUAL ARTICLES CONTAINER -->
+        <div id="articles-container" class="wireframe">
+          <button
+            class="article-card wireframe"
+            onmouseup="redirectToArticle('articles/uno-article/uno-article.html')"
+          >
+            <img
+              class="article-image wireframe"
+              src="articles/uno-article/IMG_3752.JPG"
+              alt=""
+            />
+            <h1
+              class="article-title wireframe text-white text-xx-large text-bolded"
+            >
+              Trapped And Drowned Futures
+            </h1>
+            <p class="article-description wireframe text-white text-x-large">
+              By UNO
+            </p>
+            <p class="article-button text-x-large text-white wireframe">
+              Click To View Artcle
+            </p>
+          </button>
+        </div>
+      </div>
+      <!-- 
+      <div id="journalist-stack-container" class="wireframe">
+        <h1
+          id="journalists-title"
+          class="text-white text-xx-large title-effect text-bolded wireframe"
+        >
+          Our Journalist
+        </h1>
+        <div id="journalist-container" class="wireframe"></div>
+      </div>-->
+    </div>
+
+    <!-- THE TOP MENU BAR THINGY CONTAINER -->
+    <div id="menu-bar-container" class="wireframe">
+      <div id="menu-bar" class="blur-backround title-effect wireframe">
+        <div id="menu-bar-title" class="wireframe">
+          <span class="text-xx-large text-bolded text-red wireframe load-effect"
+            >VOX</span
+          >
+          <span
+            class="text-xx-large text-bolded text-white wireframe load-effect"
+            >VERITAS</span
+          >
+        </div>
+        <div id="menubar-navigation-container" class="wireframe">
+          <button class="navigation-button text-red text-x-large text-bolded wireframe">
+            <img
+              class="navigation-button-image wireframe"
+              src="resources/general/home-icon-rs.png"
+              alt=""
+            />
+            Home
+          </button>
+          <button class="navigation-button text-red text-x-large text-bolded wireframe">
+            <img
+              class="navigation-button-image wireframe"
+              src="resources/general/article-icon-rs.png"
+              alt=""
+            />
+            Articles
+          </button>
+        </div>
+      </div>
+
+      <div id="view-space"></div>
     </div>
   </body>
 </html>

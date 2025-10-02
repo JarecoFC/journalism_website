@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--web-black);
+}
+
+:root {
+  --font-regular: "Courier-Prime";
+  --font-bold: "Courier-Prime-Bold";
+  --web-black: #231f20;
+  --web-gray: #4a4546;
+  --web-black-semi: #231f20cc;
+  --red-primary: #d11f2f;
+  --red-secondary: #9f1b30;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Courier-Prime";
+  font-weight: normal;
+  src: url(../resources/fonts/courier_prime/CourierPrime-Regular.ttf)
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Courier-Prime-Bold";
+  font-weight: bold;
+  src: url(../resources/fonts/courier_prime/CourierPrime-Bold.ttf)
+    format("TrueType");
+}
+
+.text-regular {
+  font-family: var(--font-regular);
+  font-size: normal;
+}
+.text-x-large {
+  font-family: var(--font-regular);
+  font-size: x-large;
+}
+.text-xx-large {
+  font-family: var(--font-regular);
+  font-size: xx-large;
+}
+
+.text-bolded {
+  font-family: var(--font-bold);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red-primary);
+}
+
+.title-effect {
+  border-top: 0;
+  border-bottom: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+      90deg,
+      transparent,
+      var(--white),
+      var(--white),
+      transparent
+    )
+    1;
+}
+
+.blur-backround {
+  backdrop-filter: blur(8px);
+}
+
+.load-effect{
+  visibility: hidden;
+  opacity: 0%;
+}
+

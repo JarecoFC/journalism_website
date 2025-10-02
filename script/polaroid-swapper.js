@@ -1,0 +1,26 @@
+"use strict"
+
+const polaroidPhotos = [
+  "../resources/polaroids/1759326504224.png",
+  "../resources/polaroids/1759326531818.png",
+  "../resources/polaroids/1759326555468.png",
+  "../resources/polaroids/1759326582816.png",
+  "../resources/polaroids/1759326607108.png",
+  "../resources/polaroids/1759326632788.png",
+  "../resources/polaroids/1759326657066.png",
+  "../resources/polaroids/1759326712720.png",
+  "../resources/polaroids/1759326734891.png",
+];
+
+function randomPolaroid() {
+  let target = document.querySelectorAll(".random-polaroid-photos");
+
+  target.forEach((le) => {
+    let posOrNeg = Math.random() < 0.5 ? -1 : 1;
+    let randomRotation = Math.floor(Math.random() * 8) * posOrNeg;
+    le.src = polaroidPhotos[Math.floor(Math.random() * polaroidPhotos.length)];
+    le.classList.add("active");
+    le.style.transform = `rotate(${randomRotation}deg)`;
+  });
+}
+document.addEventListener("DOMContentLoaded", randomPolaroid);

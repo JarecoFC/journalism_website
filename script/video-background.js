@@ -1,1 +1,3 @@
-document.getElementById("video-bg-player").playbackRate = 0.5;
+"use strict"
+
+document.getElementById("video-background-player").playbackRate = 0.5;

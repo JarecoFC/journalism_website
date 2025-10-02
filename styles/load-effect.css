@@ -1,0 +1,14 @@
+.load-effect {
+  animation: text-loaded 0.25s cubic-bezier(0, 1.01, 1, 1) 0.15s 1 forwards;
+}
+
+@keyframes text-loaded {
+  0% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  100% {
+      visibility: visible;
+    opacity: 100%;
+  }
+}

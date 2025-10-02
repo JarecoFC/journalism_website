@@ -1,0 +1,83 @@
+/*<div class="article-card">
+                <img class="article-image" src="resources/profiles/1758454714943.png" alt="">
+                <h1 class="article-title">Hindi Si Faust</h1>
+                <p class="article-description">Faust peke daw. Lagot!</p>
+                <button class="article-button">View More</button>
+            </div>*/
+
+.article-card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: var(--web-gray);
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 4px 4px #00000066;
+  cursor: pointer;
+  animation: hover-out 0.5s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
+  border-top: 4px;
+  border-bottom: 4px;
+  border-right: 4px;
+  border-left: 4px;
+  border-style: solid;
+  border-image: linear-gradient(
+    to up-down,
+    transparent,
+    var(--white),
+  );
+}
+
+.article-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
+  background-color: var(--red-secondary);
+}
+
+.article-title {
+  background-color: var(--red-secondary);
+  padding: 8px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.article-description {
+  background-color: var(--web-gray);
+  padding: 8px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.article-button {
+  border-radius: 0 0 16px 16px;
+  background-color: var(--web-gray);
+}
+
+.article-card:hover {
+  animation: hover-in 0.5s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
+}
+
+@keyframes hover-in {
+  0% {
+    filter: brightness(100%);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(150%);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes hover-out {
+  100% {
+    filter: brightness(100%);
+    transform: translateY(0);
+  }
+
+  0% {
+    filter: brightness(150%);
+    transform: translateY(-4px);
+  }
+}

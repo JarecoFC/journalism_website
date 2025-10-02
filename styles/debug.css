@@ -1,9 +1,10 @@
 .wireframe {
   border-style: none;
-  border-color: #ffffff55;
+  border-color: gray;
   border-width: 1px;
 }
 
 .debug-disabled {
   visibility: hidden;
 }
+
