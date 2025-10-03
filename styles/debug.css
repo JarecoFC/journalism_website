@@ -1,5 +1,5 @@
 .wireframe {
-  border-style: dashed;
+  border-style: none;
   border-color: violet;
   border-width: 1px;
 }

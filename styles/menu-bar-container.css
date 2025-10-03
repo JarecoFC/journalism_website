@@ -21,10 +21,12 @@
 #menu-bar-container #menu-bar #menubar-navigation-container{
     display: flex;
     flex-direction: row;
+    
 }
 
 .navigation-button{
     display: flex;
+    flex: 1;
     flex-direction: column;
     border-radius: 4px;
     margin: 8px;

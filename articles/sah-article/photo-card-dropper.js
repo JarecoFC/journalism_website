@@ -1,12 +1,11 @@
 "use strict";
-function newsPaperDrop() {
-  let target = document.querySelectorAll(".maligno-load-image");
+function photoCardDrop() {
+  let target = document.querySelectorAll(".photo-card");
 
   target.forEach((le) => {
     let posOrNeg = Math.random() < 0.5 ? -1 : 1;
-    let randomRotation = Math.floor(Math.random() * 4) * posOrNeg;
-    le.classList.add("active");
+    let randomRotation = Math.floor(Math.random() * 8) * posOrNeg;
     le.style.transform = `rotate(${randomRotation}deg)`;
   });
 }
-document.addEventListener("DOMContentLoaded", newsPaperDrop);
+document.addEventListener("DOMContentLoaded", photoCardDrop);
