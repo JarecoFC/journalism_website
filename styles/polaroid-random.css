@@ -5,6 +5,7 @@
   align-items: center;
   position: absolute;
   visibility: hidden;
+  image-rendering: optimizeSpeed;
 }
 
 .random-polaroid-photos.inactive {
@@ -13,22 +14,24 @@
 }
 
 #homescreen-polaroids-v1.active {
-  animation: polaroid-transition 0.5s cubic-bezier(0,1.01,1,1) 0.25s 1 forwards;
+  animation: polaroid-transition 0.5s cubic-bezier(0, 1.01, 1, 1) 0.25s 1
+    forwards;
   filter: brightness(50%);
   transform: scale(120%);
 }
 
 #homescreen-polaroids-v2.active {
-  animation: polaroid-transition 0.5s cubic-bezier(0,1.01,1,1) 0.5s 1 forwards;
+  animation: polaroid-transition 0.5s cubic-bezier(0, 1.01, 1, 1) 0.5s 1
+    forwards;
   filter: brightness(75%);
   transform: scale(110%);
 }
 
 #homescreen-polaroids-v3.active {
-  animation: polaroid-transition 0.5s cubic-bezier(0,1.01,1,1) 0.75s 1 forwards;
+  animation: polaroid-transition 0.5s cubic-bezier(0, 1.01, 1, 1) 0.75s 1
+    forwards;
   filter: brightness(100%);
 }
-
 
 @keyframes polaroid-transition {
   0% {
@@ -37,11 +40,12 @@
     scale: 120%;
     transform: translateY(-100px);
   }
-  25%{
-        opacity: 100%;
+  25% {
+    opacity: 100%;
   }
   100% {
     visibility: visible;
     scale: 100%;
+    opacity: 100%;
   }
 }

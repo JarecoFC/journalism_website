@@ -55,6 +55,7 @@
     height: 100%;
     width: 100%;
     scale: 110%;
+    image-rendering: optimizeSpeed;
 }
 
 #protesters-variant-4{

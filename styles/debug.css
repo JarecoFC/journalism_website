@@ -1,6 +1,6 @@
 .wireframe {
-  border-style: none;
-  border-color: gray;
+  border-style: dashed;
+  border-color: violet;
   border-width: 1px;
 }
 

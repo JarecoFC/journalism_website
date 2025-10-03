@@ -15,22 +15,12 @@
   box-shadow: 4px 4px #00000066;
   cursor: pointer;
   animation: hover-out 0.5s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
-  border-top: 4px;
-  border-bottom: 4px;
-  border-right: 4px;
-  border-left: 4px;
-  border-style: solid;
-  border-image: linear-gradient(
-    to up-down,
-    transparent,
-    var(--white),
-  );
 }
 
 .article-image {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: fill;
   border-radius: 16px 16px 0 0;
   background-color: var(--red-secondary);
 }

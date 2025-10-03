@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAH</title>
+
+    <link rel="stylesheet" href="../../styles/debug.css" />
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link rel="stylesheet" href="../../styles/main-content-container.css" />
+    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+
+    <link rel="stylesheet" href="sah-style.css">
+  </head>
+  <body>
+    <div id="sah-background-container"></div>
+
+    <div id="sah-main-content-container" class="wireframe">
+        <div id="title-container" class="wireframe">
+            <h1 class="sah-text-xxx">Photo Journalism</h1>
+            <h2 class="sah-text-xx">By Sah</h2>
+        </div>
+
+        <div id="photo-container">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+
+        <div id=""></div>
+    </div>
+
+    <!-- THE TOP MENU BAR THINGY CONTAINER -->
+    <div id="menu-bar-container" class="wireframe load-effect-1">
+      <div id="menu-bar" class="blur-backround title-effect wireframe">
+        <div id="menu-bar-title" class="wireframe">
+          <span
+            class="text-xx-large text-bolded text-red wireframe load-effect-2"
+            >VOX</span
+          >
+          <span
+            class="text-xx-large text-bolded text-white wireframe load-effect-2"
+            >VERITAS</span
+          >
+        </div>
+        <div id="menubar-navigation-container" class="wireframe">
+          <button
+            class="navigation-button text-red text-x-large text-bolded wireframe"
+            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+          >
+            <img
+              class="navigation-button-image wireframe"
+              src="../../resources/general/home-icon-rs.png"
+              alt=""
+            />
+            <p class="navigation-button-text text-x-large">Home</p>
+          </button>
+          <button
+            class="navigation-button text-red text-x-large text-bolded wireframe"
+          >
+            <img
+              class="navigation-button-image wireframe"
+              src="../../resources/general/article-icon-rs.png"
+              alt=""
+            />
+            <p class="navigation-button-text text-x-large">Articles</p>
+          </button>
+        </div>
+      </div>
+
+      <div id="view-space"></div>
+    </div>
+  </body>
+</html>

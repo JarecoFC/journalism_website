@@ -1,5 +1,13 @@
-.load-effect {
+.load-effect-1 {
+  animation: text-loaded 0.15s cubic-bezier(0, 1.01, 1, 1) 0.1s 1 forwards;
+}
+
+.load-effect-2 {
   animation: text-loaded 0.25s cubic-bezier(0, 1.01, 1, 1) 0.15s 1 forwards;
+}
+
+.load-effect-3 {
+  animation: text-loaded 0.25s cubic-bezier(0, 1.01, 1, 1) 0.3s 1 forwards;
 }
 
 @keyframes text-loaded {
@@ -8,7 +16,37 @@
     opacity: 0%;
   }
   100% {
-      visibility: visible;
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+.maligno-load-effect-1 {
+  animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.3s 1 forwards;
+}
+.maligno-load-effect-2 {
+  animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.5s 1 forwards;
+}
+.maligno-load-effect-3 {
+  animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.7s 1 forwards;
+}
+.maligno-load-effect-4 {
+  animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.9s 1 forwards;
+}
+
+@keyframes paper-drop {
+  0% {
+    visibility: visible;
+    opacity: 0%;
+    scale: 120%;
+    transform: translateY(-100px);
+  }
+  25% {
+    opacity: 100%;
+  }
+  100% {
+    visibility: visible;
+    scale: 100%;
     opacity: 100%;
   }
 }

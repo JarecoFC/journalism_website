@@ -1,5 +1,5 @@
 # Journalism Website Project
-A website for some project
+A website for some project in college
 
 Some general info on the code:
 
