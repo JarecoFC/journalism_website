@@ -50,3 +50,40 @@
     opacity: 100%;
   }
 }
+
+.sah-load-effect-1 {
+  animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.3s 1 forwards;
+}
+.sah-load-effect-2 {
+  animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.5s 1 forwards;
+}
+.sah-load-effect-3 {
+  animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.7s 1 forwards;
+}
+.sah-load-effect-4 {
+  animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.9s 1 forwards;
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 55%;
+  }
+  30% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 60%;
+  }
+  60% {
+    opacity: 40%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
