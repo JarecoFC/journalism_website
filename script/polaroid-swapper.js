@@ -1,15 +1,15 @@
 "use strict";
 
 const polaroidPhotos = [
-  "../resources/polaroids/1759326504224-rs.png",
-  "../resources/polaroids/1759326531818-rs.png",
-  "../resources/polaroids/1759326555468-rs.png",
-  "../resources/polaroids/1759326582816-rs.png",
-  "../resources/polaroids/1759326607108-rs.png",
-  "../resources/polaroids/1759326632788-rs.png",
-  "../resources/polaroids/1759326657066-rs.png",
-  "../resources/polaroids/1759326712720-rs.png",
-  "../resources/polaroids/1759326734891-rs.png",
+  "resources/polaroids/1759326504224-rs.png",
+  "resources/polaroids/1759326531818-rs.png",
+  "resources/polaroids/1759326555468-rs.png",
+  "resources/polaroids/1759326582816-rs.png",
+  "resources/polaroids/1759326607108-rs.png",
+  "resources/polaroids/1759326632788-rs.png",
+  "resources/polaroids/1759326657066-rs.png",
+  "resources/polaroids/1759326712720-rs.png",
+  "resources/polaroids/1759326734891-rs.png",
 ];
 
 function randomPolaroid() {
