@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const polaroidPhotos = [
   "../resources/polaroids/1759326504224-rs.png",
@@ -18,7 +18,10 @@ function randomPolaroid() {
   target.forEach((le) => {
     let posOrNeg = Math.random() < 0.5 ? -1 : 1;
     let randomRotation = Math.floor(Math.random() * 8) * posOrNeg;
-    le.src = polaroidPhotos[Math.floor(Math.random() * polaroidPhotos.length)];
+    le.setAttribute(
+      "src",
+      polaroidPhotos[Math.floor(Math.random() * polaroidPhotos.length)]
+    );
     le.style.transform = `rotate(${randomRotation}deg)`;
   });
 }
