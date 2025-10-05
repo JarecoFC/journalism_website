@@ -17,9 +17,9 @@ Currently (-)In progregress (x)Done:
 - [x] Saplit
 - [x] Uno
 - [ ] Lomi
-- [ ] Noctilucent
-- [ ] Pheonix
-- [-] WS2
+- [-] Noctilucent
+- [-] Pheonix
+- [x] WS2
 - [-] TIO/Luntiang Alon
 
 ~~`profiles/any.html` contains penname profiles and the articles made by this penname~~ This has been discontinued because of deadline
