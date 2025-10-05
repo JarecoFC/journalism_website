@@ -15,7 +15,7 @@
 
 #title-container {
   margin-top: 15vh;
-  padding: 32px;
+  padding: 2.5vmax;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -37,37 +37,32 @@
   text-align: center;
 }
 
-#photo-container {
-  display: grid;
-  justify-items: center;
-  padding: 32px;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .saplit-text-r {
   color: var(--white);
   font-family: var(--font-regular);
-  font-size: 175%;
+  font-size: clamp(2rem, 1.5vmax, 4rem);
 }
 .saplit-text-x {
   color: var(--white);
   font-family: var(--font-regular);
-  font-size: 250%;
+  font-size: clamp(2rem, 1.5vmax, 4rem);
 }
 .saplit-text-xx {
   color: var(--white);
   font-family: var(--font-regular);
-  font-size: 400%;
+  font-size: clamp(3rem, 2vmax, 5rem);
 }
 
 .saplit-text-xxx {
   color: var(--white);
   font-family: var(--font-regular);
-  font-size: 500%;
+  font-size: clamp(4rem, 2.5vmax, 6rem);
 }
 
 .photo-card {
-  padding: 32px;
+  padding: 2.5vmax;
   width: 100%;
   height: auto;
   max-height: 75vh;
@@ -81,13 +76,15 @@
 }
 
 #text-container {
-  padding: 32px;
+  padding: 2.5vmax;
 }
 
 #saplit-background-container {
   position: fixed;
   height: 100%;
   width: 100%;
+  object-fit: scale-down;
+  overflow: hidden;
 }
 
 #video-background-player {
@@ -95,6 +92,7 @@
   z-index: -9999;
   opacity: 25%;
   mix-blend-mode: color-dodge;
+  object-fit: scale-down;
 }
 
 .bg-image {
@@ -102,7 +100,7 @@
   filter: brightness(150%);
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 #blurry-light {
@@ -112,4 +110,21 @@
   height: auto;
   object-fit: cover;
   mix-blend-mode: color-dodge;
+}
+
+@media only screen and (max-width: 600px) {
+  #photo-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5vmax;
+}
+}
+
+@media only screen and (min-width: 992px) {
+  #photo-container {
+  display: grid;
+  justify-items: center;
+  padding: 2.5vmax;
+  grid-template-columns: 1fr 1fr;
+}
 }

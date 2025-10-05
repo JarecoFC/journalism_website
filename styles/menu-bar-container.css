@@ -71,8 +71,9 @@
 }
 
 #menu-bar-container #menu-bar #menu-bar-title {
-  padding: 16px;
+  padding: 1.5vmax;
   align-content: center;
+  justify-items: center;
   height: 100%;
 }
 
@@ -103,6 +104,12 @@
 
 .navigation-button:hover {
   animation: hover-in 1s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
+}
+
+#logo-vv{
+  height: 2.5rem;
+  object-fit: contain;
+  align-self: center;
 }
 
 @keyframes hover-in {

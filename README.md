@@ -7,19 +7,20 @@ Some general info on the code:
 
 `articles/any.html` contains articles by pennames
 
-Currently Done:
+Currently (-)In progregress (x)Done:
 - [x] Homepage 
-- [ ] Astrae
-- [ ] Ellawie
-- [ ] Lomi
+- [-] Slyfer
 - [x] Maligno
+- [-] Astrae
+- [x] Ellawie
+- [x] Sah
+- [x] Saplit
+- [x] Uno
+- [ ] Lomi
 - [ ] Noctilucent
 - [ ] Pheonix
-- [x] Sah
-- [ ] Saplit
-- [ ] Slyfer
-- [ ] TIO/Luntiang Alon
-- [ ] Uno
+- [-] WS2
+- [-] TIO/Luntiang Alon
 
 ~~`profiles/any.html` contains penname profiles and the articles made by this penname~~ This has been discontinued because of deadline
 

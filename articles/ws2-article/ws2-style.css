@@ -1,4 +1,4 @@
-#sah-main-content-container {
+#ws2-main-content-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -15,7 +15,7 @@
 
 #title-container {
   margin-top: 15vh;
-  padding: 32px;
+  padding: 2.5vmax;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -23,14 +23,14 @@
   background-color: #000000aa;
 }
 
-#sah-main-title {
+#ws2-main-title {
   height: auto;
   width: 100%;
   align-self: flex-end;
   text-align: center;
 }
 
-#sah-second-title {
+#ws2-second-title {
   height: auto;
   width: 100%;
   align-self: flex-start;
@@ -39,23 +39,23 @@
 
 
 
-.sah-text-r {
-  color: var(--white);
-  font-family: var(--font-regular);
-  font-size: clamp(1rem, 1vmax, 3rem);
-}
-.sah-text-x {
+.ws2-text-r {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(2rem, 1.5vmax, 4rem);
 }
-.sah-text-xx {
+.ws2-text-x {
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: clamp(2rem, 1.5vmax, 4rem);
+}
+.ws2-text-xx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(3rem, 2vmax, 5rem);
 }
 
-.sah-text-xxx {
+.ws2-text-xxx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(4rem, 2.5vmax, 6rem);
@@ -79,7 +79,7 @@
   padding: 2.5vmax;
 }
 
-#sah-background-container {
+#ws2-background-container {
   position: fixed;
   height: 100%;
   width: 100%;

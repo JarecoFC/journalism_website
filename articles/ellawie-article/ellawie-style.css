@@ -1,4 +1,4 @@
-#sah-main-content-container {
+#ellawie-main-content-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -15,7 +15,7 @@
 
 #title-container {
   margin-top: 15vh;
-  padding: 32px;
+  padding: 2.5vmax;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -23,39 +23,44 @@
   background-color: #000000aa;
 }
 
-#sah-main-title {
+#ellawie-main-title {
   height: auto;
   width: 100%;
   align-self: flex-end;
   text-align: center;
 }
 
-#sah-second-title {
+#ellawie-second-title {
   height: auto;
   width: 100%;
   align-self: flex-start;
   text-align: center;
 }
 
-
-
-.sah-text-r {
-  color: var(--white);
-  font-family: var(--font-regular);
-  font-size: clamp(1rem, 1vmax, 3rem);
+#photo-container {
+  display: grid;
+  justify-items: center;
+  padding: 2vmax;
+  grid-template-columns: 1fr 1fr;
 }
-.sah-text-x {
+
+.ellawie-text-r {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(2rem, 1.5vmax, 4rem);
 }
-.sah-text-xx {
+.ellawie-text-x {
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: clamp(2rem, 1.5vmax, 4rem);
+}
+.ellawie-text-xx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(3rem, 2vmax, 5rem);
 }
 
-.sah-text-xxx {
+.ellawie-text-xxx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(4rem, 2.5vmax, 6rem);
@@ -79,12 +84,10 @@
   padding: 2.5vmax;
 }
 
-#sah-background-container {
+#ellawie-background-container {
   position: fixed;
   height: 100%;
   width: 100%;
-  object-fit: scale-down;
-  overflow: hidden;
 }
 
 #video-background-player {
@@ -92,7 +95,6 @@
   z-index: -9999;
   opacity: 25%;
   mix-blend-mode: color-dodge;
-  object-fit: scale-down;
 }
 
 .bg-image {
@@ -100,7 +102,7 @@
   filter: brightness(150%);
   width: 100%;
   height: auto;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #blurry-light {
@@ -110,21 +112,4 @@
   height: auto;
   object-fit: cover;
   mix-blend-mode: color-dodge;
-}
-
-@media only screen and (max-width: 600px) {
-  #photo-container {
-  display: flex;
-  flex-direction: column;
-  padding: 2.5vmax;
-}
-}
-
-@media only screen and (min-width: 992px) {
-  #photo-container {
-  display: grid;
-  justify-items: center;
-  padding: 2.5vmax;
-  grid-template-columns: 1fr 1fr;
-}
 }
