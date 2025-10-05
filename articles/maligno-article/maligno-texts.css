@@ -20,6 +20,28 @@
   font-size: 500%;
 }
 
+.maligno-text-r {
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: clamp(2rem, 1.5vmax, 4rem);
+}
+.maligno-text-x {
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: clamp(2rem, 1.5vmax, 4rem);
+}
+.maligno-text-xx {
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: clamp(3rem, 2vmax, 5rem);
+}
+
+.maligno-text-xxx {
+  color: var(--white);
+  font-family: var(--font-regular);
+  font-size: clamp(4rem, 2.5vmax, 6rem);
+}
+
 #right-title {
   text-align: center;
 }

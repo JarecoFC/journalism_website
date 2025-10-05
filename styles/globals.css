@@ -41,7 +41,7 @@ body {
 }
 
 .text-bolded {
-  font-family: var(--font-bold);
+  font-family: var(--font-bold) !important;
 }
 
 .title-effect {

@@ -75,6 +75,7 @@
   align-content: center;
   justify-items: center;
   height: 100%;
+    vertical-align: middle;
 }
 
 #menu-bar-container #view-space {
@@ -107,9 +108,10 @@
 }
 
 #logo-vv{
-  height: 2.5rem;
+  height: clamp(1rem, 2.5vmax, 5rem);
   object-fit: contain;
-  align-self: center;
+  margin: auto;
+  vertical-align: middle;
 }
 
 @keyframes hover-in {

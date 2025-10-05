@@ -1,5 +1,5 @@
 # Journalism Website Project
-A website for some project in college
+A website for some project in college. Probably one of the largest projects i've done.
 
 Some general info on the code:
 
@@ -7,20 +7,20 @@ Some general info on the code:
 
 `articles/any.html` contains articles by pennames
 
-Currently (-)In progregress (x)Done:
+Currently In progregress/Done:
 - [x] Homepage 
-- [-] Slyfer
+- [x] Slyfer
 - [x] Maligno
-- [-] Astrae
+- [x] Astrae
 - [x] Ellawie
 - [x] Sah
 - [x] Saplit
 - [x] Uno
-- [ ] Lomi
-- [-] Noctilucent
-- [-] Pheonix
-- [x] WS2
-- [-] TIO/Luntiang Alon
+- [ ] Lomi 
+- [x] Noctilucent
+- [x] Pheonix
+- [x] WS2 
+- [ ] TIO/Luntiang Alon (Included but WIP)
 
 ~~`profiles/any.html` contains penname profiles and the articles made by this penname~~ This has been discontinued because of deadline
 

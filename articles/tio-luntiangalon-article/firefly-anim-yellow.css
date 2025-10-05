@@ -1,0 +1,84 @@
+
+/* Fireflyyyyyyyyy*/
+.firefly {
+  position: fixed;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 50%;
+  animation: floatAround ease-in-out infinite;
+  pointer-events: none;
+}
+
+.firefly::before,
+.firefly::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: -10vw;
+}
+
+.firefly::before {
+  background: black;
+  opacity: 0.4;
+  animation: drift 15s linear infinite;
+}
+
+.firefly::after {
+  background: white;
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw yellow;
+  animation: drift 10s linear infinite, flash 6s ease infinite;
+}
+
+/* Randomizer*/
+.firefly:nth-child(1)  { top: 10%; left: 20%; animation-duration: 26s; animation-name: move1; }
+.firefly:nth-child(2)  { top: 50%; left: 80%; animation-duration: 22s; animation-name: move2; }
+.firefly:nth-child(3)  { top: 70%; left: 10%; animation-duration: 28s; animation-name: move3; }
+.firefly:nth-child(4)  { top: 30%; left: 40%; animation-duration: 25s; animation-name: move4; }
+.firefly:nth-child(5)  { top: 60%; left: 60%; animation-duration: 20s; animation-name: move5; }
+.firefly:nth-child(6)  { top: 80%; left: 30%; animation-duration: 29s; animation-name: move6; }
+.firefly:nth-child(7)  { top: 20%; left: 70%; animation-duration: 27s; animation-name: move7; }
+.firefly:nth-child(8)  { top: 15%; left: 50%; animation-duration: 24s; animation-name: move8; }
+.firefly:nth-child(9)  { top: 75%; left: 80%; animation-duration: 31s; animation-name: move9; }
+.firefly:nth-child(10) { top: 40%; left: 15%; animation-duration: 23s; animation-name: move10; }
+.firefly:nth-child(11) { top: 85%; left: 55%; animation-duration: 26s; animation-name: move11; }
+.firefly:nth-child(12) { top: 25%; left: 85%; animation-duration: 22s; animation-name: move12; }
+.firefly:nth-child(13) { top: 65%; left: 45%; animation-duration: 28s; animation-name: move13; }
+.firefly:nth-child(14) { top: 50%; left: 10%; animation-duration: 25s; animation-name: move14; }
+.firefly:nth-child(15) { top: 5%; left: 90%;  animation-duration: 30s; animation-name: move15; }
+
+/* the paths */
+@keyframes move1  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(20vw, -10vh) scale(1.2);} }
+@keyframes move2  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-15vw, 20vh) scale(0.8);} }
+@keyframes move3  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(10vw, 25vh) scale(1);} }
+@keyframes move4  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-10vw, -20vh) scale(1);} }
+@keyframes move5  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(25vw, 10vh) scale(0.9);} }
+@keyframes move6  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-25vw, -10vh) scale(1);} }
+@keyframes move7  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(30vw, 15vh) scale(1);} }
+@keyframes move8  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-20vw, -15vh) scale(1.1);} }
+@keyframes move9  { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-10vw, 25vh) scale(0.9);} }
+@keyframes move10 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(20vw, -20vh) scale(1);} }
+@keyframes move11 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-30vw, 10vh) scale(1);} }
+@keyframes move12 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(15vw, -25vh) scale(0.8);} }
+@keyframes move13 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-15vw, 25vh) scale(1);} }
+@keyframes move14 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(10vw, -30vh) scale(1.1);} }
+@keyframes move15 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-20vw, 20vh) scale(1);} }
+
+/* Spin & glow animations */
+@keyframes drift {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes flash {
+  0%, 30%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow;
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw yellow;
+  }
+}
