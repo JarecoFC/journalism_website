@@ -1,0 +1,14 @@
+.fade-load-effect-1,
+.fade-load-effect-2,
+.fade-load-effect-3,
+.fade-load-effect-4,
+.paper-load-effect-1,
+.paper-load-effect-2,
+.paper-load-effect-3,
+.paper-load-effect-4,
+.flicker-load-effect-1,
+.flicker-load-effect-2,
+.flicker-load-effect-3,
+.flicker-load-effect-4 {
+  visibility: hidden;
+}

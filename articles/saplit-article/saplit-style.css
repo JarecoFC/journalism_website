@@ -1,4 +1,4 @@
-#uno-main-content-container {
+#saplit-main-content-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -23,14 +23,14 @@
   background-color: #000000aa;
 }
 
-#uno-main-title {
+#saplit-main-title {
   height: auto;
   width: 100%;
   align-self: flex-end;
   text-align: center;
 }
 
-#uno-second-title {
+#saplit-second-title {
   height: auto;
   width: 100%;
   align-self: flex-start;
@@ -44,23 +44,23 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.uno-text-r {
+.saplit-text-r {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: 175%;
 }
-.uno-text-x {
+.saplit-text-x {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: 250%;
 }
-.uno-text-xx {
+.saplit-text-xx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: 400%;
 }
 
-.uno-text-xxx {
+.saplit-text-xxx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: 500%;
@@ -84,7 +84,7 @@
   padding: 32px;
 }
 
-#uno-background-container {
+#saplit-background-container {
   position: fixed;
   height: 100%;
   width: 100%;

@@ -1,15 +1,40 @@
+.fade-load-effect-1 {
+  animation: text-loaded 0.15s cubic-bezier(0, 1.01, 1, 1) 0.1s 1 forwards;
+}
 
+.fade-load-effect-2 {
+  animation: text-loaded 0.25s cubic-bezier(0, 1.01, 1, 1) 0.15s 1 forwards;
+}
 
-.maligno-load-effect-1 {
+.fade-load-effect-3 {
+  animation: text-loaded 0.25s cubic-bezier(0, 1.01, 1, 1) 0.3s 1 forwards;
+}
+
+.fade-load-effect-4 {
+  animation: text-loaded 0.25s cubic-bezier(0, 1.01, 1, 1) 0.9s 1 forwards;
+}
+
+@keyframes text-loaded {
+  0% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+.paper-load-effect-1 {
   animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.3s 1 forwards;
 }
-.maligno-load-effect-2 {
+.paper-load-effect-2 {
   animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.5s 1 forwards;
 }
-.maligno-load-effect-3 {
+.paper-load-effect-3 {
   animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.7s 1 forwards;
 }
-.maligno-load-effect-4 {
+.paper-load-effect-4 {
   animation: paper-drop 0.25s cubic-bezier(0, 1.01, 1, 1) 0.9s 1 forwards;
 }
 
@@ -30,39 +55,46 @@
   }
 }
 
-.sah-load-effect-1 {
+.flicker-load-effect-1 {
   animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.3s 1 forwards;
 }
-.sah-load-effect-2 {
+.flicker-load-effect-2 {
   animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.5s 1 forwards;
 }
-.sah-load-effect-3 {
+.flicker-load-effect-3 {
   animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.7s 1 forwards;
 }
-.sah-load-effect-4 {
+.flicker-load-effect-4 {
   animation: flickering 1s cubic-bezier(0, 1.01, 1, 1) 0.9s 1 forwards;
 }
 
 @keyframes flickering {
   0% {
+    visibility: visible;
     opacity: 0%;
   }
   25% {
+    visibility: visible;
     opacity: 55%;
   }
   30% {
+    visibility: visible;
     opacity: 20%;
   }
   50% {
+    visibility: visible;
     opacity: 60%;
   }
   60% {
+    visibility: visible;
     opacity: 40%;
   }
   75% {
+    visibility: visible;
     opacity: 50%;
   }
   100% {
+    visibility: visible;
     opacity: 100%;
   }
 }

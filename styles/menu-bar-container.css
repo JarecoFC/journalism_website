@@ -67,6 +67,7 @@
   background-color: var(--web-black);
   border-style: solid;
   border-image: linear-gradient(0deg, var(--white), var(--white), transparent) 1;
+  animation: hover-out 1s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
 }
 
 #menu-bar-container #menu-bar #menu-bar-title {
@@ -98,4 +99,32 @@
 
 .text-red {
   color: var(--red-primary);
+}
+
+.navigation-button:hover {
+  animation: hover-in 1s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
+}
+
+@keyframes hover-in {
+  0% {
+    filter: brightness(100%);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(150%);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes hover-out {
+  100% {
+    filter: brightness(100%);
+    transform: translateY(0);
+  }
+
+  0% {
+    filter: brightness(150%);
+    transform: translateY(-4px);
+  }
 }

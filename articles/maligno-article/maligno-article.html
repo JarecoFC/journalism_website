@@ -7,21 +7,22 @@
 
     <link rel="stylesheet" href="../../styles/debug.css" />
     <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/main-content-container.css" />
     <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
-
-    <link rel="stylesheet" href="maligno-style.css" />
+    <link rel="stylesheet" href="../../styles/maligno/maligno-global.css" />
+    <link rel="stylesheet" href="../../styles/maligno/maligno-containers.css" />
+    <link rel="stylesheet" href="../../styles/maligno/maligno-texts.css" />
+    <link rel="stylesheet" href="../../styles/load-effect-begin.css">
+    <link rel="stylesheet" href="../../styles/load-effect.css" defer>
 
     <script src="../../script/site-redirector.js"></script>
-    <script src="newspaper-dropper.js" defer></script>
+    <script src="script/newspaper-dropper.js" defer></script>
   </head>
   <body class="load-effect-1">
-    <div
-      id="maligno-background-container"
-      class="wireframe"
-    >
-      <div class="maligno-img-generic-container maligno-load-effect-1" id="double-img-container">
+    <div id="maligno-background-container" class="wireframe">
+      <div
+        class="maligno-img-generic-container paper-load-effect-1"
+        id="double-img-container"
+      >
         <img
           class="maligno-generic-bg-image maligno-load-image wireframe"
           id="bg-load-1"
@@ -30,21 +31,21 @@
         />
 
         <img
-          class="maligno-generic-bg-image maligno-load-image wireframe maligno-load-effect-2"
+          class="maligno-generic-bg-image maligno-load-image wireframe paper-load-effect-2"
           id="bg-load-2"
           src="generic-paper-texture.jpg"
           alt=""
         />
 
         <img
-          class="maligno-generic-bg-image maligno-load-image wireframe maligno-load-effect-3"
+          class="maligno-generic-bg-image maligno-load-image wireframe paper-load-effect-3"
           id="bg-load-3"
           src="generic-paper-texture.jpg"
           alt=""
         />
 
         <img
-          class="maligno-generic-bg-image wireframe maligno-load-effect-4"
+          class="maligno-generic-bg-image wireframe paper-load-effect-4"
           id="maligno-paper-texture"
           src="generic-paper-texture.jpg"
           alt=""
@@ -54,23 +55,26 @@
 
     <div
       id="maligno-main-content-container"
-      class="wireframe maligno-load-effect-4"
+      class="wireframe paper-load-effect-4"
     >
-      <div id="maligno-title-container" class="wireframe load-effect-3">
+      <div id="maligno-title-container" class="wireframe fade-load-effect-4">
         <div id="maligno-title-box" class="wireframe">
           <h1 id="first-title" class="maligno-title-xxx text-bolded wireframe">
             Justice Delayed
           </h1>
           <h2 id="second-title" class="maligno-title-x text-bolded wireframe">
             Corruption Sustained
-            <br><h3 id="third-title" class="maligno-title-r text-bolded wireframe">By Maligno</h3>
+            <br />
+            <h3 id="third-title" class="maligno-title-r text-bolded wireframe">
+              By Maligno
+            </h3>
           </h2>
         </div>
       </div>
 
       <div
         id="maligno-article-content-container"
-        class="wireframe load-effect-3"
+        class="wireframe fade-load-effect-4"
       >
         <div id="left-text-container">
           <h1 class="maligno-title-xx text-bolded wireframe">
@@ -137,15 +141,15 @@
     </div>
 
     <!-- THE TOP MENU BAR THINGY CONTAINER -->
-    <div id="menu-bar-container" class="wireframe load-effect-1">
+    <div id="menu-bar-container" class="wireframe fade-load-effect-1">
       <div id="menu-bar" class="blur-backround title-effect wireframe">
         <div id="menu-bar-title" class="wireframe">
           <span
-            class="text-xx-large text-bolded text-red wireframe load-effect-2"
+            class="text-xx-large text-bolded text-red wireframe fade-load-effect-2"
             >VOX</span
           >
           <span
-            class="text-xx-large text-bolded text-white wireframe load-effect-2"
+            class="text-xx-large text-bolded text-white wireframe fade-load-effect-2"
             >VERITAS</span
           >
         </div>

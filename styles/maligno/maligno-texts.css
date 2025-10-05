@@ -1,0 +1,42 @@
+.maligno-title-r {
+  color: var(--newspaper-text);
+  font-family: var(--font-regular);
+  font-size: 175%;
+}
+.maligno-title-x {
+  color: var(--newspaper-text);
+  font-family: var(--font-regular);
+  font-size: 250%;
+}
+.maligno-title-xx {
+  color: var(--newspaper-text);
+  font-family: var(--font-regular);
+  font-size: 400%;
+}
+
+.maligno-title-xxx {
+  color: var(--newspaper-text);
+  font-family: var(--font-regular);
+  font-size: 500%;
+}
+
+#right-title {
+  text-align: center;
+}
+
+#first-title {
+  text-align: center;
+  padding-top: 32px;
+  color: var(--newspaper-text);
+}
+
+#second-title {
+  text-align: center;
+  color: var(--newspaper-text);
+}
+
+#third-title {
+  text-align: center;
+  padding-bottom: 16px;
+  color: var(--newspaper-text);
+}
