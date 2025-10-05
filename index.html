@@ -7,13 +7,15 @@
 
     <link rel="stylesheet" href="styles/debug.css" />
     <link rel="stylesheet" href="styles/globals.css" />
-    <link rel="stylesheet" href="styles/background-container.css" />
-    <link rel="stylesheet" href="styles/main-content-container.css" />
-    <link rel="stylesheet" href="styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="styles/articles.css" />
+    <link rel="stylesheet" href="styles/home/home-articles.css" />
+    <link rel="stylesheet" href="styles/home/home-background-container.css" />
+    <link rel="stylesheet" href="styles/home/home-load-begin.css" />
+    <link rel="stylesheet" href="styles/home/home-main-content-container.css" />
+    <link rel="stylesheet" href="styles/home/home-page-texts.css" />
+    <link rel="stylesheet" href="styles/home/home-load-effects.css" defer />
+    <link rel="stylesheet" href="styles/home/home-polaroid-random.css" defer />
 
-    <link rel="stylesheet" href="styles/polaroid-random.css" defer />
-    <link rel="stylesheet" href="styles/load-effect.css" defer />
+    <link rel="stylesheet" href="styles/menu-bar-container.css" />
 
     <script src="./script/polaroid-swapper.js" defer></script>
     <script src="./script/video-background.js" defer></script>
@@ -62,12 +64,18 @@
       <div id="introduction-container" class="wireframe">
         <!-- ABOUT US CONTAINER -->
         <div id="about-us-container" class="wireframe">
-          <h1 class="text-xx-large text-bolded text-white load-effect-3">
+          <h1
+            class="home-text-xx-large text-bolded home-text-main load-effect-3"
+          >
             About
-            <span class="text-xx-large text-bolded text-red">VOX</span>
-            <span class="text-xx-large text-bolded text-white">VERITAS</span>
+            <span class="home-text-xx-large text-bolded home-text-secondary"
+              >VOX</span
+            >
+            <span class="home-text-xx-large text-bolded home-text-main"
+              >VERITAS</span
+            >
           </h1>
-          <p class="text-x-large text-white load-effect-3">
+          <p class="home-text-x-large text-normal home-text-main load-effect-3">
             Welcome to Vox Veritas where we uncovered the truth, raising
             awareness, and inspiring change. The Philippines stands at a road
             where justice and corruption constantly collide each breath we take.
@@ -109,7 +117,7 @@
       <div id="articles-stack-container" class="wireframe">
         <h1
           id="articles-title"
-          class="text-white text-xx-large title-effect text-bolded wireframe"
+          class="home-text-xx-large home-text-main text-bolded title-effect wireframe"
         >
           Our Popular Articles
         </h1>
@@ -127,14 +135,18 @@
               alt=""
             />
             <h1
-              class="article-title wireframe text-white text-xx-large text-bolded"
+              class="article-title home-text-main home-text-xx-large text-bolded wireframe"
             >
-              Trapped And Drowned Futures
+              Drowned Futures
             </h1>
-            <p class="article-description wireframe text-white text-x-large">
+            <p
+              class="article-description home-text-main home-text-x-large text-normal wireframe"
+            >
               BY UNO
             </p>
-            <p class="article-button text-x-large text-white wireframe">
+            <p
+              class="article-button home-text-main home-text-x-large text-normal wireframe"
+            >
               Click To View Artcle
             </p>
           </button>
@@ -149,14 +161,18 @@
               alt=""
             />
             <h1
-              class="article-title wireframe text-white text-x-large text-bolded"
+              class="article-title home-text-main home-text-x-large text-bolded wireframe"
             >
               Justice Delayed. Corruption Sustained
             </h1>
-            <p class="article-description wireframe text-white text-x-large">
+            <p
+              class="article-description home-text-main home-text-x-large text-normal wireframe"
+            >
               BY MALIGNO
             </p>
-            <p class="article-button text-x-large text-white wireframe">
+            <p
+              class="article-button home-text-main home-text-x-large text-normal wireframe"
+            >
               Click To View Artcle
             </p>
           </button>
@@ -170,118 +186,22 @@
               src="articles/sah-article/IMG_1001-rs.jpg"
               alt=""
             />
-            <h1
-              class="article-title wireframe text-white text-x-large text-bolded"
-            >
-              Photo Journalism
+            <h1 class="article-title home-text-main home-text-xx-large text-bolded wireframe">
+              Daily Struggles
             </h1>
-            <p class="article-description wireframe text-white text-x-large">
+            <p
+              class="article-description home-text-main home-text-x-large text-normal wireframe"
+            >
               BY SAH
             </p>
-            <p class="article-button text-x-large text-white wireframe">
-              Click To View Artcle
-            </p>
-          </button>
-
-          <button
-            class="article-card wireframe"
-            onmouseup="redirectToArticle('articles/sah-article/sah-article.html')"
-          >
-            <img
-              class="article-image wireframe"
-              src="articles/maligno-article/corruption-thumbnail.png"
-              alt=""
-            />
-            <h1
-              class="article-title wireframe text-white text-x-large text-bolded"
+            <p
+              class="article-button home-text-main home-text-x-large text-normal wireframe"
             >
-              Justice Delayed. Corruption Sustained
-            </h1>
-            <p class="article-description wireframe text-white text-x-large">
-              BY MALIGNO
-            </p>
-            <p class="article-button text-x-large text-white wireframe">
-              Click To View Artcle
-            </p>
-          </button>
-
-          <button
-            class="article-card wireframe"
-            onmouseup="redirectToArticle('articles/maligno-article/maligno-article.html')"
-          >
-            <img
-              class="article-image wireframe"
-              src="articles/maligno-article/corruption-thumbnail.png"
-              alt=""
-            />
-            <h1
-              class="article-title wireframe text-white text-x-large text-bolded"
-            >
-              Justice Delayed. Corruption Sustained
-            </h1>
-            <p class="article-description wireframe text-white text-x-large">
-              BY MALIGNO
-            </p>
-            <p class="article-button text-x-large text-white wireframe">
-              Click To View Artcle
-            </p>
-          </button>
-
-          <button
-            class="article-card wireframe"
-            onmouseup="redirectToArticle('articles/maligno-article/maligno-article.html')"
-          >
-            <img
-              class="article-image wireframe"
-              src="articles/maligno-article/corruption-thumbnail.png"
-              alt=""
-            />
-            <h1
-              class="article-title wireframe text-white text-x-large text-bolded"
-            >
-              Justice Delayed. Corruption Sustained
-            </h1>
-            <p class="article-description wireframe text-white text-x-large">
-              BY MALIGNO
-            </p>
-            <p class="article-button text-x-large text-white wireframe">
-              Click To View Artcle
-            </p>
-          </button>
-
-          <button
-            class="article-card wireframe"
-            onmouseup="redirectToArticle('articles/maligno-article/maligno-article.html')"
-          >
-            <img
-              class="article-image wireframe"
-              src="articles/maligno-article/corruption-thumbnail.png"
-              alt=""
-            />
-            <h1
-              class="article-title wireframe text-white text-x-large text-bolded"
-            >
-              Justice Delayed. Corruption Sustained
-            </h1>
-            <p class="article-description wireframe text-white text-x-large">
-              BY MALIGNO
-            </p>
-            <p class="article-button text-x-large text-white wireframe">
               Click To View Artcle
             </p>
           </button>
         </div>
       </div>
-      <!-- 
-      <div id="journalist-stack-container" class="wireframe">
-        <h1
-          id="journalists-title"
-          class="text-white text-xx-large title-effect text-bolded wireframe"
-        >
-          Our Journalist
-        </h1>
-        <div id="journalist-container" class="wireframe"></div>
-      </div>-->
     </div>
 
     <!-- THE TOP MENU BAR THINGY CONTAINER -->

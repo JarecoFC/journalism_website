@@ -1,0 +1,17 @@
+.home-text-regular {
+  font-size: clamp(1rem, 1vmax, 3rem);
+}
+.home-text-x-large {
+  font-size: clamp(1rem, 1.5vmax, 4rem);
+}
+.home-text-xx-large {
+  font-size: clamp(1rem, 2.5vmax, 5rem);
+}
+
+.home-text-main {
+  color: var(--white);
+}
+
+.home-text-secondary {
+  color: var(--red-primary);
+}
