@@ -1,4 +1,4 @@
-#astrae-main-content-container {
+#luntiangalon-main-content-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -23,32 +23,32 @@
   background-color: #00000055;
 }
 
-#astrae-main-title {
+#luntiangalon-main-title {
   height: auto;
   width: 100%;
   align-self: flex-end;
   text-align: center;
 }
 
-#astrae-second-title {
+#luntiangalon-second-title {
   height: auto;
   width: 100%;
   align-self: flex-start;
   text-align: center;
 }
 
-.astrae-text-x {
+.luntiangalon-text-x {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(2rem, 1.5vmax, 4rem);
 }
-.astrae-text-xx {
+.luntiangalon-text-xx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(3rem, 2vmax, 5rem);
 }
 
-.astrae-text-xxx {
+.luntiangalon-text-xxx {
   color: var(--white);
   font-family: var(--font-regular);
   font-size: clamp(4rem, 2.5vmax, 6rem);
@@ -61,7 +61,6 @@
   max-height: 75vh;
   object-fit: scale-down;
   align-items: center;
-  image-rendering: optimizeSpeed;
 }
 
 .text-paragraph {
@@ -69,12 +68,7 @@
   line-height: 4vmax;
 }
 
-.text-paragraph-2 {
-  text-align: start;
-  line-height: 4vmax;
-}
-
-#astrae-background-container {
+#luntiangalon-background-container {
   position: fixed;
   height: 100%;
   width: 100vw;
@@ -114,14 +108,14 @@
     padding: 2.5vmax;
   }
 
-  .astrae-vid-1 {
+  .luntiangalon-vid-1 {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
     mix-blend-mode: color-dodge;
   }
 
-  .astrae-vid-2 {
+  .luntiangalon-vid-2 {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
@@ -140,7 +134,7 @@
     grid-template-rows: 1fr 1.5fr;
   }
 
-  .astrae-text-r {
+  .luntiangalon-text-r {
     color: var(--white);
     font-family: var(--font-regular);
     font-size: clamp(1rem, 1.25vmax, 4rem);
@@ -160,14 +154,14 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .astrae-vid-1 {
+  .luntiangalon-vid-1 {
     height: 100vh;
     width: auto;
     object-fit: cover;
     mix-blend-mode: color-dodge;
   }
 
-  .astrae-vid-2 {
+  .luntiangalon-vid-2 {
     height: 100vh;
     width: auto;
     object-fit: cover;
@@ -184,7 +178,7 @@
     grid-template-columns: 1fr 1.5fr;
   }
 
-  .astrae-text-r {
+  .luntiangalon-text-r {
     color: var(--white);
     font-family: var(--font-regular);
     font-size: clamp(2rem, 1.5vmax, 4rem);
@@ -195,8 +189,15 @@
   }
 }
 
-.astrae-text-spacer {
-    color: transparent;
-    font-family: var(--font-regular);
-    font-size: clamp(2rem, 1.5vmax, 4rem);
-  }
+.luntiangalon-text-spacer {
+  color: transparent;
+  font-family: var(--font-regular);
+  font-size: clamp(2rem, 1.5vmax, 4rem);
+}
+
+.image-generic {
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+  padding: 2.5vmax;
+}

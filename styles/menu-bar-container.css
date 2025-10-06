@@ -33,7 +33,7 @@
     height: 100%;
     background-color: var(--web-black-semi);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1.5fr;
     pointer-events: auto;
   }
 }
@@ -73,9 +73,10 @@
 #menu-bar-container #menu-bar #menu-bar-title {
   padding: 1.5vmax;
   align-content: center;
-  justify-items: center;
   height: 100%;
-    vertical-align: middle;
+  display: flex;
+  gap: 0;
+  justify-content: flex-start;
 }
 
 #menu-bar-container #view-space {
@@ -107,11 +108,9 @@
   animation: hover-in 1s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
 }
 
-#logo-vv{
+#logo-vv {
   height: clamp(1rem, 2.5vmax, 5rem);
   object-fit: contain;
-  margin: auto;
-  vertical-align: middle;
 }
 
 @keyframes hover-in {
