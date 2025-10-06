@@ -10,6 +10,14 @@ const polaroidPhotos = [
   "resources/polaroids/1759326657066-rs.png",
   "resources/polaroids/1759326712720-rs.png",
   "resources/polaroids/1759326734891-rs.png",
+  "resources/polaroids/1759727392503-rs.png",
+  "resources/polaroids/1759727428981-rs.png",
+  "resources/polaroids/1759727454077-rs.png",
+  "resources/polaroids/1759727487270-rs.png",
+  "resources/polaroids/1759727504932-rs.png",
+  "resources/polaroids/1759727529022-rs.png",
+  "resources/polaroids/1759727544820-rs.png",
+  "resources/polaroids/1759727847881-rs.png",
 ];
 
 function randomPolaroid() {
