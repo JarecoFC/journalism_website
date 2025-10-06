@@ -42,7 +42,7 @@
 .sah-text-r {
   color: var(--white);
   font-family: var(--font-regular);
-  font-size: clamp(1rem, 1vmax, 3rem);
+  font-size: clamp(1rem, 1.5vmax, 3rem);
 }
 .sah-text-x {
   color: var(--white);
@@ -125,6 +125,6 @@
   display: grid;
   justify-items: center;
   padding: 2.5vmax;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 }
