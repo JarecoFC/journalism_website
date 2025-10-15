@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUNTIANG ALON</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="luntiangalon-bg-1.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
-    <link rel="stylesheet" href="luntiangalon-style.css" />
-    <script src="../../script/site-redirector.js" defer></script>
+    <style>
+      :root {
+        --star-color: #866689;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../styles/starry-common-styles.css" />
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js"></script>
   </head>
   <body>
-    <div id="luntiangalon-background-container" class="fade-load-effect-1">
+    <div class="starry-background-container fade-load-effect-1">
       <div class="bg-animation fade-load-effect-2">
         <div id="stars-ub"></div>
         <div id="stars-ub2"></div>
@@ -26,30 +32,22 @@
       </div>
     </div>
 
-    <div id="luntiangalon-main-content-container" class="wireframe">
-      <div id="title-container" class="wireframe">
-        <h1
-          id="luntiangalon-main-title"
-          class="wireframe luntiangalon-text-xxx"
-        >
-          Guiding Light
-        </h1>
-        <h2
-          id="luntiangalon-second-title"
-          class="luntiangalon-text-xx wireframe"
-        >
+    <div class="starry-main-content-container wireframe">
+      <div
+        class="title-container starry-main-title wireframe fade-load-effect-2"
+      >
+        <h1 class="wireframe starry-text-xxx">Guiding Light</h1>
+        <h2 class="starry-second-title starry-text-xx wireframe">
           By Luntiang Alon
         </h2>
       </div>
 
       <div class="side-grid-1 wireframe">
-        <div class="text-container wireframe">
-          <h2
-            class="text-paragraph luntiangalon-text-xx title-effect wireframe"
-          >
+        <div class="text-container wireframe fade-load-effect-2">
+          <h2 class="text-paragraph starry-text-xx title-effect wireframe">
             Guiding Light
           </h2>
-          <p class="text-paragraph luntiangalon-text-r">
+          <p class="text-paragraph starry-text-r">
             In our society burdened by a lot of corruption and injustices, we
             the youth stands as a symbol of what’s right and what’s the truth.
             The man holding a lantern and a flag in this picture represents the
@@ -63,18 +61,22 @@
             against the unending corruption and injustices.
           </p>
         </div>
-        <img class="image-generic" src="guiding_light.png" alt="" />
+        <img
+          class="image-generic photo-card paper-load-effect-1"
+          src="../resources/general/luntiang-alon/guiding_light.png"
+        />
       </div>
       <div class="side-grid-2 wireframe">
-        <img class="image-generic" src="flood-money.jpg" alt="" />
+        <img
+          class="image-generic photo-card paper-load-effect-1"
+          src="../resources/general/luntiang-alon/flood-money.jpg"
+        />
 
         <div class="text-container wireframe">
-          <h2
-            class="text-paragraph luntiangalon-text-xx title-effect wireframe"
-          >
+          <h2 class="text-paragraph starry-text-xx title-effect wireframe">
             Flood of Money
           </h2>
-          <p class="text-paragraph-2 luntiangalon-text-r">
+          <p class="text-paragraph-2 starry-text-r">
             This artwork portrays the overwhelming power of greed and corruption
             of people that drowns our whole society beneath a “flood of money”.
             The people suffer because of money. Many people carry the burden and
@@ -95,7 +97,7 @@
         <div id="menu-bar-title" class="wireframe">
           <img
             id="logo-vv"
-            src="../../resources/favicon.png"
+            src="../resources/favicon.png"
             alt=""
             class="wireframe fade-load-effect-3"
           />
@@ -111,22 +113,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -134,11 +136,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>

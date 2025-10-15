@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NOCTILUCENT</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="noctilucent-bg-1.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
-    <link rel="stylesheet" href="noctilucent-style.css" />
-    <script src="../../script/site-redirector.js" defer></script>
+    <style>
+      :root {
+        --star-color: #eeeeee;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../styles/starry-common-styles.css" />
+    <script src="../script/site-redirector.js" defer></script>
   </head>
   <body>
-    <div id="noctilucent-background-container" class="fade-load-effect-1">
+    <div class="starry-background-container fade-load-effect-1">
       <div class="bg-animation fade-load-effect-2">
         <div id="stars-ub"></div>
         <div id="stars-ub2"></div>
@@ -26,19 +31,19 @@
       </div>
     </div>
 
-    <div id="noctilucent-main-content-container" class="wireframe">
-      <div id="title-container" class="wireframe">
-        <h1 id="noctilucent-main-title" class="wireframe noctilucent-text-xxx">
-          Editorial
-        </h1>
-        <h2 id="noctilucent-second-title" class="noctilucent-text-xx wireframe">
+    <div class="starry-main-content-container wireframe">
+      <div
+        class="title-container starry-main-title wireframe fade-load-effect-2"
+      >
+        <h1 class="wireframe starry-text-xxx">Editorial</h1>
+        <h2 class="starry-second-title starry-text-xx wireframe">
           By Noctilucent
         </h2>
       </div>
 
-      <div class="side-grid-1 wireframe">
-        <div class="text-container wireframe">
-          <p class="text-paragraph noctilucent-text-r">
+      <div class="side-grid-1a wireframe">
+        <div class="text-container wireframe fade-load-effect-2">
+          <p class="text-paragraph starry-text-r">
             The Philippines is a country that fought for its own sense of
             nationalism and freedom, freedom that countless of people have
             sacrificed their lives all for the sake of a better tomorrow for the
@@ -52,7 +57,8 @@
             because of outsiders ironically It’s because of our fellow Filipinos
             that are up on the top.
           </p>
-          <p class="text-paragraph noctilucent-text-r">
+          <p class="text-paragraph starry-text-spacer">Spacer</p>
+          <p class="text-paragraph starry-text-r">
             Disdain from the common Filipino folk towards the leading government
             isn’t an entirely new thing, though there has been a recent
             realization from a few yet many Filipinos that have had enough of
@@ -74,7 +80,8 @@
             the rally is barely scratches the surface of what has been building
             up inside these people.
           </p>
-          <p class="text-paragraph noctilucent-text-r">
+          <p class="text-paragraph starry-text-spacer">Spacer</p>
+          <p class="text-paragraph starry-text-r">
             What’s more surprising is how they mock us, belittle us, see us as
             mindless dolls to fill their pockets while they sit around and do
             nothing; actually they do less than nothing as they even prevent
@@ -87,10 +94,12 @@
             even a whole city that accepts daily floods in their neighborhoods
             as the norm.
           </p>
-          <p class="text-paragraph noctilucent-text-r">
+          <p class="text-paragraph starry-text-spacer">Spacer</p>
+          <p class="text-paragraph starry-text-r">
             What they do not know, is that we are not powerless.
           </p>
-          <p class="text-paragraph noctilucent-text-r">
+          <p class="text-paragraph starry-text-spacer">Spacer</p>
+          <p class="text-paragraph starry-text-r">
             We cannot allow our country to be siphoned of its riches, the common
             folk bled dry for the ever consuming machine of greed and
             self-interest that we now call our government. If we are not to act
@@ -113,7 +122,7 @@
         <div id="menu-bar-title" class="wireframe">
           <img
             id="logo-vv"
-            src="../../resources/favicon.png"
+            src="../resources/favicon.png"
             alt=""
             class="wireframe fade-load-effect-3"
           />
@@ -129,22 +138,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -152,11 +161,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>

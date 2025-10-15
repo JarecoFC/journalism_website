@@ -62,7 +62,7 @@
 
 @media only screen and (max-width: 600px) {
   #placeholder-bg {
-    background-image: url("generic-paper-texture.jpg");
+    background-image: url("../../resources/general/maligno/paper_1-rs.jpg");
     width: 100vw;
     height: 100%;
     object-fit: fill;

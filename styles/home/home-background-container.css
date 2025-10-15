@@ -42,7 +42,7 @@
 
 #video-background-player {
   position: fixed;
-  height: auto;
+  height: 100vh;
   width: 100vw;
   z-index: -9998;
   mix-blend-mode: color-dodge;
@@ -56,7 +56,6 @@
     height: 100%;
     width: 100vw;
     scale: 110%;
-    image-rendering: optimizeSpeed;
 }
 
 #protesters-variant-4{

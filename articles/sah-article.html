@@ -4,90 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAH</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/main-content-container.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/expose-common-styles.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
-    <link rel="stylesheet" href="sah-style.css" />
-    <script src="../../script/video-background.js" defer></script>
-    <script src="../../script/site-redirector.js" defer></script>
-    <script src="photo-card-dropper.js" defer></script>
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js" defer></script>
   </head>
   <body>
-    <div id="sah-background-container" class="flicker-load-effect-1">
-      <video id="video-background-player" autoplay muted loop playsinline>
-        <source src="../../resources/dust-bg.webm" type="video/mp4" />
+    <div class="article-background-container flicker-load-effect-1">
+      <video class="video-background-player" autoplay muted loop playsinline>
+        <source src="../resources/dust-bg.webm" type="video/mp4" />
       </video>
-      <img class="bg-image" src="../../resources/general/light-bg.png" alt="" />
+      <img class="bg-image" src="../resources/general/light-bg.png" alt="" />
       <img
-        id="blurry-light"
-        class="bg-image"
-        src="../../resources/general/light-bg-tp.png"
+        class="bg-image blurry-light"
+        src="../resources/general/light-bg-tp.png"
         alt=""
       />
     </div>
 
-    <div
-      id="sah-main-content-container"
-      class="wireframe flicker-load-effect-3"
-    >
-      <div id="title-container" class="wireframe">
-        <h1 id="sah-main-title" class="wireframe sah-text-xxx">
+    <div class="wireframe flicker-load-effect-3 article-main-content-container">
+      <div class="article-title-container wireframe">
+        <h1 class="wireframe photojournal-text-xxx text-paragraph">
           Daily Struggles
         </h1>
-        <h2 id="sah-second-title" class="sah-text-xx wireframe">By Sah</h2>
+        <h2 class="photojournal-text-xx wireframe text-paragraph">By Sah</h2>
       </div>
 
-      <div id="photo-container" class="wireframe">
+      <div class="article-photo-container wireframe">
         <img
-          src="../../resources/polaroids/sah/photo_journal-1-rs.png"
+          src="../resources/polaroids/sah/photo_journal-1-rs.png"
           alt=""
           class="photo-card wireframe paper-load-effect-2"
         />
         <img
-          src="../../resources/polaroids/sah/photo_journal-3-rs.png"
+          src="../resources/polaroids/sah/photo_journal-3-rs.png"
           alt=""
           class="photo-card wireframe paper-load-effect-3"
         />
         <img
-          src="../../resources/polaroids/sah/photo_journal-2-rs.png"
+          src="../resources/polaroids/sah/photo_journal-2-rs.png"
           alt=""
           class="photo-card wireframe paper-load-effect-4"
         />
       </div>
 
-      <div id="text-container">
-        <p class="text-paragraph sah-text-r">
+      <div class="article-text-container wireframe">
+        <p class="text-paragraph photojournal-text-r">
           These photograph captures the daily struggles of ordinary Filipinos
           enduring the congestion of trains, floods in the streets, heavy
           traffic, and the constant race against time in public transportation.
         </p>
 
-        <p class="text-paragraph sah-text-r">
+        <p class="text-paragraph photojournal-text-r">
           All of these are part of their fight to provide for their families and
           to live with dignity.
         </p>
-        <p class="text-paragraph sah-text-r">
+        <p class="text-paragraph photojournal-text-r">
           Yet behind their sweat and sacrifices, the nation remains wounded by
           persistent corruption.
         </p>
-        <p class="text-paragraph sah-text-r">
+        <p class="text-paragraph photojournal-text-r">
           The taxes that each citizen works hard to pay are not fully utilized
           for the country's welfare, as a large portion ends up in the pockets
           of corrupt officials.
         </p>
 
-        <p class="text-paragraph sah-text-r">
+        <p class="text-paragraph photojournal-text-r">
           Here, the absence of justice becomes evident, while the people endure
           meager services and heavy burdens, a few continue to indulge in wealth
           that is not theirs.
         </p>
-        <p class="text-paragraph sah-text-r">
+        <p class="text-paragraph photojournal-text-r">
           These images reflect not only the physical struggles of the people,
           but also the greater battle for justice and integrity in the nation.
         </p>
@@ -100,7 +94,7 @@
         <div id="menu-bar-title" class="wireframe">
           <img
             id="logo-vv"
-            src="../../resources/favicon.png"
+            src="../resources/favicon.png"
             alt=""
             class="wireframe fade-load-effect-3"
           />
@@ -116,22 +110,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -139,11 +133,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>

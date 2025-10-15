@@ -4,61 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ELLAWIE</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/main-content-container.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/expose-common-styles.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
-    <link rel="stylesheet" href="ellawie-style.css" />
-    <script src="../../script/video-background.js" defer></script>
-    <script src="../../script/site-redirector.js" defer></script>
-    <script src="photo-card-dropper.js" defer></script>
+    <script src="../script/video-background.js" defer></script>
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js" defer></script>
   </head>
   <body>
-    <div id="ellawie-background-container" class="flicker-load-effect-1">
-      <video id="video-background-player" autoplay muted loop playsinline>
-        <source src="../../resources/dust-bg.webm" type="video/mp4" />
+    <div class="article-background-container flicker-load-effect-1">
+      <video class="video-background-player" autoplay muted loop playsinline>
+        <source src="../resources/dust-bg.webm" type="video/mp4" />
       </video>
-      <img class="bg-image" src="../../resources/general/light-bg.png" alt="" />
+      <img class="bg-image" src="../resources/general/light-bg.png" alt="" />
       <img
-        id="blurry-light"
-        class="bg-image"
-        src="../../resources/general/light-bg-tp.png"
+        class="bg-image blurry-light"
+        src="../resources/general/light-bg-tp.png"
         alt=""
       />
     </div>
 
-    <div
-      id="ellawie-main-content-container"
-      class="wireframe flicker-load-effect-3"
-    >
-      <div id="title-container" class="wireframe">
-        <h1 id="ellawie-main-title" class="wireframe ellawie-text-xxx">
-          Barefeet
-        </h1>
-        <h2 id="ellawie-second-title" class="ellawie-text-x wireframe">
-          By Ellawie
-        </h2>
+    <div class="wireframe flicker-load-effect-3 article-main-content-container">
+      <div class="article-title-container wireframe">
+        <h1 class="wireframe photojournal-text-xxx text-paragraph">Barefeet</h1>
+        <h2 class="photojournal-text-xx wireframe text-paragraph">By Ellawie</h2>
       </div>
 
-      <div id="text-container">
-        <h2 id="ellawie-quote-title" class="ellawie-text-x wireframe">
+      <div class="article-text-container wireframe">
+        <h2 class="photojournal-text-x wireframe">
           Bare Feet
         </h2>
-        <p class="text-paragraph ellawie-text-r title-effect">
+        <p class="text-paragraph photojournal-text-x title-effect">
           Many cross the flood with nothing but courage. Their steps tell
           stories of survival in silence.
         </p>
         <img
-          src="../../resources/general/ellawie/IMG_3261.PNG"
+          src="../resources/general/ellawie/IMG_3261.PNG"
           alt=""
           class="photo-card wireframe paper-load-effect-2"
         />
-        <p class="text-paragraph ellawie-text-r">
+        <p class="text-paragraph photojournal-text-x">
           Some people are trying to make their way through the waist-deep flood,
           holding umbrellas as they move along. Others are barefoot, clutching
           their belongings tightly, just trying to get through the water. You
@@ -71,11 +62,11 @@
           even if the road is hard.
         </p>
         <img
-          src="../../resources/general/ellawie/wmremove-transformed.jpeg"
+          src="../resources/general/ellawie/wmremove-transformed.jpeg"
           alt=""
           class="photo-card wireframe paper-load-effect-3"
         />
-        <p class="text-paragraph ellawie-text-r">
+        <p class="text-paragraph photojournal-text-x">
           As you can see people are trying hard to push their motorcycles
           through the flood. The rain is pouring, and you can really feel the
           struggle on their faces. They should've been riding safely on the
@@ -93,7 +84,7 @@
         <div id="menu-bar-title" class="wireframe">
           <img
             id="logo-vv"
-            src="../../resources/favicon.png"
+            src="../resources/favicon.png"
             alt=""
             class="wireframe fade-load-effect-3"
           />
@@ -109,22 +100,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -132,11 +123,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>

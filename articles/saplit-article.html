@@ -4,62 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAPLIT</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/main-content-container.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/expose-common-styles.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
     <link rel="stylesheet" href="saplit-style.css" />
-    <script src="../../script/video-background.js" defer></script>
-    <script src="../../script/site-redirector.js" defer></script>
-    <script src="photo-card-dropper.js" defer></script>
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js" defer></script>
   </head>
   <body>
-    <div id="saplit-background-container" class="flicker-load-effect-1">
-      <video id="video-background-player" autoplay muted loop playsinline>
-        <source src="../../resources/dust-bg.webm" type="video/mp4" />
+    <div class="article-background-container flicker-load-effect-1">
+      <video class="video-background-player" autoplay muted loop playsinline>
+        <source src="../resources/dust-bg.webm" type="video/mp4" />
       </video>
-      <img class="bg-image" src="../../resources/general/light-bg.png" alt="" />
+      <img class="bg-image" src="../resources/general/light-bg.png" alt="" />
       <img
-        id="blurry-light"
-        class="bg-image"
-        src="../../resources/general/light-bg-tp.png"
+        class="bg-image blurry-light"
+        src="../resources/general/light-bg-tp.png"
         alt=""
       />
     </div>
 
-    <div
-      id="saplit-main-content-container"
-      class="wireframe flicker-load-effect-3"
-    >
-      <div id="title-container" class="wireframe">
-        <h1 id="saplit-main-title" class="wireframe saplit-text-xxx">
+    <div class="wireframe flicker-load-effect-3 article-main-content-container">
+      <div class="article-title-container wireframe">
+        <h1 class="wireframe photojournal-text-xxx text-paragraph">
           Hindi Baha Ang Kaaway
         </h1>
-        <h2 id="saplit-second-title" class="saplit-text-xx wireframe">
-          By saplit
-        </h2>
+        <h2 class="photojournal-text-xx wireframe text-paragraph">By saplit</h2>
       </div>
 
-      <div id="photo-container" class="wireframe">
+      <div class="article-photo-container wireframe">
         <img
-          src="../../resources/polaroids/saplit/photo_journal-1-rs.png"
+          src="../resources/polaroids/saplit/photo_journal-1-rs.png"
           alt=""
           class="photo-card wireframe paper-load-effect-2"
         />
         <img
-          src="../../resources/polaroids/saplit/photo_journal-2-rs.png"
+          src="../resources/polaroids/saplit/photo_journal-2-rs.png"
           alt=""
           class="photo-card wireframe paper-load-effect-3"
         />
       </div>
 
-      <div id="text-container">
-        <p class="text-paragraph saplit-text-r">
+      <div class="article-text-container wireframe">
+        <p class="text-paragraph photojournal-text-x">
           These two images show the severe and alarming effects of corruption
           and the absence of justice for people. In the first image, there’s a
           person that sits by the side of a flooded road. This is a picture of
@@ -67,7 +60,7 @@
           stolen funds and government neglect. our whole nation.
         </p>
 
-        <p class="text-paragraph saplit-text-r">
+        <p class="text-paragraph photojournal-text-x">
           In the second one, long lines of commuters represent the daily
           struggles that could have been eased if public money had been used
           properly. These are the two faces of the same wound of a society that
@@ -84,7 +77,7 @@
         <div id="menu-bar-title" class="wireframe">
           <img
             id="logo-vv"
-            src="../../resources/favicon.png"
+            src="../resources/favicon.png"
             alt=""
             class="wireframe fade-load-effect-3"
           />
@@ -100,22 +93,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -123,11 +116,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>

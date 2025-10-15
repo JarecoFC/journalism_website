@@ -4,7 +4,7 @@ function photoCardDrop() {
 
   target.forEach((le) => {
     let posOrNeg = Math.random() < 0.5 ? -1 : 1;
-    let randomRotation = Math.floor(Math.random() * 3) * posOrNeg;
+    let randomRotation = Math.floor(Math.random() * 6) * posOrNeg;
     le.style.transform = `rotate(${randomRotation}deg)`;
   });
 }

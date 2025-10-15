@@ -4,60 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WS2</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/main-content-container.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/expose-common-styles.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
-    <link rel="stylesheet" href="ws2-style.css" />
-    <script src="../../script/video-background.js" defer></script>
-    <script src="../../script/site-redirector.js" defer></script>
-    <script src="photo-card-dropper.js" defer></script>
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js" defer></script>
   </head>
   <body>
-    <div id="ws2-background-container" class="flicker-load-effect-1">
-      <video id="video-background-player" autoplay muted loop playsinline>
-        <source src="../../resources/dust-bg.webm" type="video/mp4" />
+    <div class="article-background-container flicker-load-effect-1">
+      <video class="video-background-player" autoplay muted loop playsinline>
+        <source src="../resources/dust-bg.webm" type="video/mp4" />
       </video>
-      <img class="bg-image" src="../../resources/general/light-bg.png" alt="" />
+      <img class="bg-image" src="../resources/general/light-bg.png" alt="" />
       <img
-        id="blurry-light"
-        class="bg-image"
-        src="../../resources/general/light-bg-tp.png"
+        class="bg-image blurry-light"
+        src="../resources/general/light-bg-tp.png"
         alt=""
       />
     </div>
 
-    <div
-      id="ws2-main-content-container"
-      class="wireframe flicker-load-effect-3"
-    >
-      <div id="title-container" class="wireframe">
-        <h1 id="ws2-main-title" class="wireframe ws2-text-xxx">
+    <div class="wireframe flicker-load-effect-3 article-main-content-container">
+      <div class="article-title-container wireframe">
+        <h1 class="wireframe photojournal-text-xxx text-paragraph">
           Lost Greatness
         </h1>
-        <h2 id="ws2-second-title" class="ws2-text-xx wireframe">By ws2</h2>
+        <h2 class="photojournal-text-xx wireframe text-paragraph">By ws2</h2>
       </div>
 
-      <div id="photo-container" class="wireframe">
+      <div class="article-photo-container wireframe">
         <img
-          src="../../resources/polaroids/ws2/polaroid-1-rs.png  "
+          src="../resources/polaroids/ws2/polaroid-1-rs.png  "
           alt=""
           class="photo-card wireframe paper-load-effect-2"
         />
         <img
-          src="../../resources/polaroids/ws2/polaroid-2-rs.png"
+          src="../resources/polaroids/ws2/polaroid-2-rs.png"
           alt=""
           class="photo-card wireframe paper-load-effect-3"
         />
       </div>
 
-      <div id="text-container">
-        <p class="text-paragraph ws2-text-r">
+      <div class="article-text-container wireframe">
+        <p class="text-paragraph photojournal-text-r">
           The image shows heavy traffic, and on the other side of the lane shows
           the same traffic but it is counterflowing. Traffic is inevitable, it
           will happen anyways. It is just the matter on how often it happens and
@@ -70,7 +64,7 @@
           it is the right way or the wrong way.
         </p>
 
-        <p class="text-paragraph ws2-text-r">
+        <p class="text-paragraph photojournal-text-r">
           This image shows one of the Philippines' air asset for defense back
           then. This was used as a means of deterrence and a show of force of
           the Philippines. The Philippines had it good back then, if anything,
@@ -101,22 +95,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -124,11 +118,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>

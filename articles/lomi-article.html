@@ -4,50 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOMI</title>
-    <link rel="icon" type="image/x-icon" href="../../resources/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/debug.css" />
-    <link rel="stylesheet" href="../../styles/globals.css" />
-    <link rel="stylesheet" href="../../styles/main-content-container.css" />
-    <link rel="stylesheet" href="../../styles/menu-bar-container.css" />
-    <link rel="stylesheet" href="../../styles/load-effect-begin.css" />
-    <link rel="stylesheet" href="../../styles/load-effect.css" defer />
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/expose-common-styles.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
 
-    <link rel="stylesheet" href="lomi-style.css" />
-    <script src="../../script/video-background.js" defer></script>
-    <script src="../../script/site-redirector.js" defer></script>
-    <script src="photo-card-dropper.js" defer></script>
+    <script src="../script/video-background.js" defer></script>
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js" defer></script>
   </head>
   <body>
-    <div id="lomi-background-container" class="flicker-load-effect-1">
-      <video id="video-background-player" autoplay muted loop playsinline>
-        <source src="../../resources/dust-bg.webm" type="video/mp4" />
+    <div class="article-background-container flicker-load-effect-1">
+      <video class="video-background-player" autoplay muted loop playsinline>
+        <source src="../resources/dust-bg.webm" type="video/mp4" />
       </video>
-      <img class="bg-image" src="../../resources/general/light-bg.png" alt="" />
+      <img class="bg-image" src="../resources/general/light-bg.png" alt="" />
       <img
-        id="blurry-light"
-        class="bg-image"
-        src="../../resources/general/light-bg-tp.png"
+        class="bg-image blurry-light"
+        src="../resources/general/light-bg-tp.png"
         alt=""
       />
     </div>
 
-    <div
-      id="lomi-main-content-container"
-      class="wireframe flicker-load-effect-3"
-    >
-      <div id="title-container" class="wireframe">
-        <h1 id="lomi-main-title" class="wireframe lomi-text-xxx">Struggle</h1>
-        <h2 id="lomi-second-title" class="lomi-text-xx wireframe">By lomi</h2>
+    <div class="wireframe flicker-load-effect-3 article-main-content-container">
+      <div class="article-title-container wireframe">
+        <h1 class="wireframe photojournal-text-xxx text-paragraph">Struggle</h1>
+        <h2 class="photojournal-text-xx wireframe text-paragraph">By lomi</h2>
       </div>
 
-      <div id="text-container">
+      <div class="article-text-container wireframe">
         <img
-          src="Untitled370_20251006144648.png"
+          src="../resources/general/lomi/Untitled370_20251006144648.png"
           alt=""
           class="photo-card wireframe paper-load-effect-2"
         />
-        <p class="text-paragraph lomi-text-r">
+        <p class="text-paragraph photojournal-text-x">
           Nations that struggle the most with poverty are often the loudest ones
           about fighting corruption. Yet, decades pass, the same promises are
           repeated, the same scandals show, and the same people suffer. It makes
@@ -55,20 +50,20 @@
           the country is permanently tied to it together.
         </p>
 
-        <p class="text-paragraph lomi-text-r">
+        <p class="text-paragraph photojournal-text-x">
           Poverty and corruption don't exist separately. They feed each other.
           The poor are trapped the system that reward dishonesty, while those in
           power benefit from keeping things exactly as they are. Until
           accountability overwrites excuses, no amount of help or economic
           growth can erase the stain of corruption.
         </p>
-        <p class="text-paragraph lomi-text-r">
+        <p class="text-paragraph photojournal-text-x">
           Escaping corruption isn't impossible, but it's not easy either. It
           takes more than economic growth, it takes courage and strength. True
           reform means protecting independent courts, supporting a free press,
           and letting people see where their bills is going.
         </p>
-        <p class="text-paragraph lomi-text-r">
+        <p class="text-paragraph photojournal-text-x">
           Education also plays a deeper role here. It's not just about teaching
           math or science it's about teaching integrity, responsibility, and
           empathy. The fight against corruption starts not in the government
@@ -84,7 +79,7 @@
         <div id="menu-bar-title" class="wireframe">
           <img
             id="logo-vv"
-            src="../../resources/favicon.png"
+            src="../resources/favicon.png"
             alt=""
             class="wireframe fade-load-effect-3"
           />
@@ -100,22 +95,22 @@
         <div id="menubar-navigation-container" class="wireframe">
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html')"
+            onmouseup="redirectToArticle('../index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/home-icon-rs.png"
+              src="../resources/general/home_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Home</p>
           </button>
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../index.html#articles-stack-container')"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/article-icon-rs.png"
+              src="../resources/general/article_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Articles</p>
@@ -123,11 +118,11 @@
 
           <button
             class="navigation-button text-red text-x-large text-bolded wireframe"
-            onmouseup="redirectToArticle('../../articles/tio-luntiangalon-article/index.html')"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
           >
             <img
               class="navigation-button-image wireframe"
-              src="../../resources/general/member-icon-rs.png"
+              src="../resources/general/member_icon-rs.png"
               alt=""
             />
             <p class="navigation-button-text text-x-large">Member</p>
