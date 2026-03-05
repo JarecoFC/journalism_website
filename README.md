@@ -1,5 +1,5 @@
 > [!NOTE]
-> This project is already done. <ins>**The pages will be unpublished soon**</ins>. You can download this repo and run index.html locally if you still want to view the website
+> This project is already done. <ins>**The pages have been unpublished**</ins>. You can download this repo and run index.html locally if you still want to view the website
 
 # Journalism Website Project
 
